@@ -6,3 +6,13 @@
 h1 {
   font-family: 'starwars';
 }
+
+#placeholder {
+  height: 200px;
+  width: 200px;
+}
+
+#hearts {
+  height: 20px;
+  width: 20px;
+}

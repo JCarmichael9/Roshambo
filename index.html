@@ -18,17 +18,44 @@
     />
     <link rel="stylesheet" href="style.css">
   </head>
-
+<div class="container">
   <body>
     <header>
-      <!-- place navbar here -->
+      <div id="heading"><h1 class="mt-5 text-center">Jedi Duel</h1></div>
     </header>
     <main>
-      <h1>starwars</h1>
+      <div id="welcome" class="text-center mt-5">
+          <h2>Welcome User</h2>
+      </div>
+      <!--lightsaber hearts-->
+      <div class="row mt-5">
+        <div class="col-6 text-center">
+          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
+          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
+          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
+        </div>
+        <div class="col-6 text-center">
+          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
+          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
+          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
+        </div>
+      </div>
+      <!--choice with pic hearts-->
+      <div class="row ">
+        <div class="col-6 text-center">
+          User Choice<br><img class="rounded img-fluid" id="placeholder" src="imgs/millenium.gif">
+        </div>
+        <div class="col-6 text-center">
+          Computer Choice<br>
+            <img class="rounded img-fluid" id="placeholder" src="imgs/tiefighter.gif">
+        </div>
+      </div>
+      
     </main>
     <footer class="fixed-bottom bg-dark text-light text-center">
       <h1>©2025 JamesFilms Ltd.</h1>
     </footer>
+  </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
