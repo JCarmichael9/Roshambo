@@ -20,37 +20,24 @@
   </head>
 <div class="container">
   <body>
-    <header>
-      <div id="heading"><h1 class="mt-5 text-center">Jedi Duel</h1></div>
+    <header class="text-light">
     </header>
     <main>
-      <div class="text-center mt-5">
-          <h2 id="welcome"></h2>
-      </div>
-      <!--lightsaber hearts-->
-      <div class="row mt-5">
-        <div class="col-6 text-center">
-          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
-          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
-          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
+      <div class="container d-flex justify-content-center align-items-center big">
+        <div class="container d-block">
+          <div id="heading"><p class="mb-5 text-center text-light pt-5 display-1">Jedi Duel</p></div>
+        <div class="row">
+          <div class="col-12">
+            <label for="firstName" class="form-label fs-2">Please Enter Your First Name Jedi</label>
+          </div>
         </div>
-        <div class="col-6 text-center">
-          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
-          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
-          <img class="rounded img-fluid" id="hearts" src="imgs/millenium.gif">
+        <div class="row">
+          <div class="col-12">
+            <input type="text" class="form-control display-1" id="firstName" placeholder="Enter your first name">
+          </div>
         </div>
       </div>
-      <!--choice with pic hearts-->
-      <div class="row ">
-        <div class="col-6 text-center">
-          <h2>user Choice</h2><br><img class="rounded img-fluid" id="placeholder" src="imgs/millenium.gif">
-        </div>
-        <div class="col-6 text-center">
-          <h2>Computer Choice</h2><br>
-            <img class="rounded img-fluid" id="placeholder" src="imgs/tiefighter.gif">
-        </div>
-      </div>
-      
+    </div>
     </main>
     <footer class="fixed-bottom bg-dark text-light text-center">
       <h1>©2025 JamesFilms Ltd.</h1>

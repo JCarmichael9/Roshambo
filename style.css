@@ -5,6 +5,7 @@
 
 h1 {
   font-family: 'starwars';
+  transform: scale(1.5) 2s;
 }
 
 h2 {
@@ -17,11 +18,58 @@ h2 {
 }
 
 #hearts {
-  height: 20px;
-  width: 20px;
+  height: 50px;
+  width: 50px;
 }
 
 body {
-  background-image: url(/imgs/spacegif.gif);
-  
+  background: url(imgs/spacebg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.buttons {
+  height: 200px;
+  width: 200px;
+}
+
+input::placeholder{
+  color: white;
+}
+
+input[type="text"] {
+  font-size: 24px;
+  font-family: "starwars", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+input[type="text"]:active {
+  font-size: 24px;
+  font-family: "starwars", serif;
+  font-weight: 700;
+}
+input[type="text"]:active {
+  font-size: 24px;
+  font-family: "starwars", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.form-label {
+  font-family: "starwars";
+  color: white;
+}
+
+.big {
+  height: 85vh;
+  width: 100vw;
+}
+
+#heading {
+  font-size: 1vw;
 }
