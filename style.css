@@ -7,6 +7,10 @@ h1 {
   font-family: 'starwars';
 }
 
+h2 {
+  font-family: 'starwars';
+}
+
 #placeholder {
   height: 200px;
   width: 200px;
@@ -15,4 +19,9 @@ h1 {
 #hearts {
   height: 20px;
   width: 20px;
+}
+
+body {
+  background-image: url(/imgs/spacegif.gif);
+  
 }
