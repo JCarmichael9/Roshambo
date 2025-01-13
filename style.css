@@ -36,7 +36,7 @@ body {
   width: 200px;
 }
 
-input::placeholder{
+input::placeholder {
   color: white;
 }
 
@@ -46,11 +46,13 @@ input[type="text"] {
   font-weight: 700;
   font-style: normal;
 }
+
 input[type="text"]:active {
   font-size: 24px;
   font-family: "starwars", serif;
   font-weight: 700;
 }
+
 input[type="text"]:active {
   font-size: 24px;
   font-family: "starwars", serif;
@@ -81,9 +83,12 @@ input[type="text"]:active {
 }
 
 .slide {
-transform: translateY(0vh);
-transition: all 5s linear;
+  margin-top: 50px;
+  transform: translateY(0vh);
+  transition: all 5s linear;
+
   @starting-style {
     transform: translateY(-100vh)
   }
+
 }
