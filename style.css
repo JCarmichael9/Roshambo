@@ -5,7 +5,6 @@
 
 h1 {
   font-family: 'starwars';
-  transform: scale(1.5) 2s;
 }
 
 h2 {
@@ -71,5 +70,20 @@ input[type="text"]:active {
 }
 
 #heading {
-  font-size: 1vw;
+  font-size: 200px;
+  font-family: 'starwars';
+}
+
+.btn {
+  font-family: "starwars";
+  color: white;
+  font-size: 40px
+}
+
+.slide {
+transform: translateY(0vh);
+transition: all 5s linear;
+  @starting-style {
+    transform: translateY(-100vh)
+  }
 }
