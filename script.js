@@ -1,8 +1,10 @@
-greeting() {
-  if (firstName === '')
-    return `Greetings Jedi ${firstName}`
+function getValue() {
+  // Get the value from the input field
+  const inputValue = document.getElementById("firstName");
+
+  // Use the value for something else
+  document.getElementById('welcome').innerText = `Greetings Jedi ${firstName}`
 }
-document.getElementById('welcome').innerText = 'greeting'
 
 
 getUserChoice = userInput => {
