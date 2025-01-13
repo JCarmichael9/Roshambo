@@ -85,10 +85,12 @@ input[type="text"]:active {
 .slide {
   margin-top: 50px;
   transform: translateY(0vh);
+
   transition: all 5s linear;
 
   @starting-style {
     transform: translateY(-100vh)
+
   }
 
 }

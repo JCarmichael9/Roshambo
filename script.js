@@ -3,7 +3,10 @@ function getValue() {
   const inputValue = document.getElementById("firstName");
 
   // Use the value for something else
-  document.getElementById('welcome').innerText = `Greetings Jedi ${firstName}`
+  let Greet = document.getElementById('welcome')
+  userName
+  ? (Greet.innerText=`Hello ${userName}`)
+  : (Greet.innerText=`Hello Dickwad`)
 }
 
 
