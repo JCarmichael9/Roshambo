@@ -1,24 +1,25 @@
 function getValue() {
   // Get the value from the input field
-  const inputValue = document.getElementById("firstName");
+  let userName = document.getElementById('firstName');
 
   // Use the value for something else
   let Greet = document.getElementById('welcome')
   userName
   ? (Greet.innerText=`Hello ${userName}`)
-  : (Greet.innerText=`Hello Dickwad`)
+  : (Greet.innerText=`Hello James (your short af)`)
 }
 
+let userScore = 0
+let computerScore = 0
 
-getUserChoice = userInput => {
-  userInput = userInput.toLowerCase();
-
-  if (userInput === 'rock' || userInput === 'scissors' || userInput === 'paper') {
-    return userInput;
-  } else {
-    console.log("Error! Try again");
-  }
+function computerWins() {
+  computerScore++
 }
+
+function userWins() {
+  userScore++
+}
+
 //3,4
 const getComputerChoice = () => {
   const randomNumber = Math.floor(Math.random() * 3);
@@ -33,49 +34,49 @@ const getComputerChoice = () => {
   }
 };
 
-const determineWinner = (userChoice, computerChoice) => {
-  if (userChoice === 'bomb') {
-    return "You Won!"
-  }
-
+let determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
     return 'Its a tie';
   }
 
   if (userChoice === 'rock') {
     if (computerChoice === 'paper') {
+      computerWins()
       return 'Computer WON'
-    } else {
+
+    } else if (computerChoice ==='scissors') {
+      userWins()
       return 'You WON!'
-    };
+
+    }
   }
 
   if (userChoice === 'paper') {
     if (computerChoice === 'scissors') {
       return 'Computer WON'
-    } else {
-      return "You WON!"
-    }
+    } else if (computerChoice ==='rock') {
+      return 'You WON!'
+    };
   }
 
   if (userChoice === 'scissors') {
     if (computerChoice === 'rock')
       return "The computer WON!"
-  } else {
-    return "You won!";
-  };
+  } else if (computerChoice ==='paper') {
+    return 'You WON!'
+  }
 }
 
 
 
 
-const playGame = () => {
-  const userChoice = getUserChoice('scissors');
+function playGame(userChoice) {
   const computerChoice = getComputerChoice();
-  console.log('You threw: ' + userChoice);
-  console.log('The computer threw: ' + computerChoice);
-
+  console.log('You played: ' + userChoice);
+  console.log('The computer plays: ' + computerChoice);
   console.log(determineWinner(userChoice, computerChoice));
+  console.log(userScore)
+  console.log(computerScore)
 };
 
 
