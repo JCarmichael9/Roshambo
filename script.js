@@ -53,16 +53,20 @@ let determineWinner = (userChoice, computerChoice) => {
 
   if (userChoice === 'paper') {
     if (computerChoice === 'scissors') {
+      computerWins()
       return 'Computer WON'
     } else if (computerChoice ==='rock') {
+      userWins()
       return 'You WON!'
     };
   }
 
   if (userChoice === 'scissors') {
     if (computerChoice === 'rock')
+      computerWins()
       return "The computer WON!"
   } else if (computerChoice ==='paper') {
+    userWins()
     return 'You WON!'
   }
 }
@@ -77,6 +81,17 @@ function playGame(userChoice) {
   console.log(determineWinner(userChoice, computerChoice));
   console.log(userScore)
   console.log(computerScore)
+  if (computerScore === 3)  {
+    console.log('A Computer Beat Your Ass!!!!')
+    userScore = 0
+    computerScore = 0
+    }
+    
+    if (userScore === 3)  {
+      console.log('You Beat A Computer, not impressive')
+      userScore = 0
+      computerScore = 0
+    }
 };
 
 
