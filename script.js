@@ -73,7 +73,6 @@ let determineWinner = (userChoice, computerChoice) => {
 
 
 
-
 function playGame(userChoice) {
   const computerChoice = getComputerChoice();
   console.log('You played: ' + userChoice);

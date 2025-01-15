@@ -16,7 +16,32 @@ h2 {
   width: 200px;
 }
 
-#hearts {
+#userHeart1 {
+  height: 50px;
+  width: 50px;
+}
+
+#userHeart2 {
+  height: 50px;
+  width: 50px;
+}
+
+#userHeart3 {
+  height: 50px;
+  width: 50px;
+}
+
+#computerHeart1 {
+  height: 50px;
+  width: 50px;
+}
+
+#computerHeart2 {
+  height: 50px;
+  width: 50px;
+}
+
+#computerHeart3 {
   height: 50px;
   width: 50px;
 }
