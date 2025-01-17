@@ -6,7 +6,8 @@ function getValue() {
   let Greet = document.getElementById('welcome')
   userName
   ? (Greet.innerText=`Hello ${userName}`)
-  : (Greet.innerText='ello')
+  : (Greet.innerText='Hello')
+  console.log('hi')
 }
 
 userPicChoice = ""
@@ -108,16 +109,14 @@ function playGame(userChoice) {
  
   if (computerScore === 3)  {
     console.log('A Computer Beat Your Ass!!!!')
-    userScore = 0
-    computerScore = 0
+    compModal.style.display = "block";
     document.getElementById("userHeart3").classList.add('hide')
     }
     
     if (userScore === 3)  {
       console.log('You Beat A Computer, not impressive')
-      userScore = 0
-      computerScore = 0
       document.getElementById("computerHeart3").classList.add('hide')
+      userModal.style.display = "block";
     }
     compPick.src = compChoice
     userPick.src = userPicChoice
@@ -137,6 +136,26 @@ function playGame(userChoice) {
 };
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const savedUserName = localStorage.getItem("userName");
+  if (savedUserName) {
+    document.getElementById("welcome").innerText = `Hello ${savedUserName}`;
+  } else {
+    document.getElementById("welcome").innerText = 'Hello';
+  }
+});
 
 
-playGame();
+
+let userModal = document.getElementById("userModal");
+let compModal = document.getElementById("computerModal");
+
+if (userScore === 3 ) {
+  
+}
+
+if (computerScore === 3) {
+
+}
+
+getValue();
