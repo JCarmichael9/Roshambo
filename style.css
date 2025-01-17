@@ -16,6 +16,10 @@ h2 {
   width: 200px;
 }
 
+.hide {
+  opacity: 0;
+}
+
 #userHeart1 {
   height: 50px;
   width: 50px;
@@ -118,4 +122,18 @@ input[type="text"]:active {
 
   }
 
+}
+
+#compPick {
+  height: 200px;
+  width: 200px;
+}
+
+#userPick {
+  height: 200px;
+  width: 200px;
+}
+
+.btn {
+  border: none;
 }
