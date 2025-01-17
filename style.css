@@ -16,10 +16,18 @@ h2 {
   width: 200px;
 }
 
+.choice {
+  color: #FFE81F;
+}
+
 .footer {
   color: #FFE81F;
 }
 
+
+#welcome {
+color: #FFE81F;
+}
 .hide {
   opacity: 0;
 }
@@ -111,7 +119,7 @@ input[type="text"]:active {
 }
 
 .btn:hover {
-  color: #FFE81F;
+  color: #5e5506;
 }
 
 .btn {
@@ -123,10 +131,10 @@ input[type="text"]:active {
 .slide {
   margin-top: 50px;
   transform: translateY(2vh) scale(1);
-  transition: all 5s linear;
+  transition: all 15s linear;
 
     @starting-style {
-    transform: translateY(-100vh) scale(0.1);
+    transform: translateY(-80vh) scale(0.1);
   }
 
 }
