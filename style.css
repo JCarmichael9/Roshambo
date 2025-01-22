@@ -20,6 +20,10 @@ h2 {
   color: #FFE81F;
 }
 
+.jamesBtn:not(:disabled):not(:disabled):active {
+  color: #5e5506;
+} 
+
 .footer {
   color: #FFE81F;
 }
@@ -131,10 +135,10 @@ input[type="text"]:active {
 .slide {
   margin-top: 50px;
   transform: translateY(2vh) scale(1);
-  transition: all 15s linear;
+  transition: all 1s linear;
 
     @starting-style {
-    transform: translateY(-80vh) scale(0.1);
+    transform: translateY(-50vh) scale(0.1);
   }
 
 }
@@ -176,7 +180,7 @@ input[type="text"]:active {
 }
 
 .reset {
-  color: black;
+  color: #FFE81F;
   font-family: "starwars";
   font-size: 40px
 }
