@@ -15,10 +15,24 @@
 
 
 <body>
+  <div id="computerModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content bg-black border-none text-center textModal">
+      <p class="text-white text-center">The Dark Side claimed victory this time. But do not worry, the Force will guide you next time!</p>
+      <a href="rockpaperscissors.html"><button class="btn reset">Reset</button></a>
+    </div>
+  </div>
+  <div id="userModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content bg-black border-none text-center">
+      <p class="text-white text-center textModal">The Force is strong with you! You have defeated your opponent like a true Jedi!</p>
+      <a href="rockpaperscissors.html"><button class="btn reset jamesBtn">Reset</button></a> 
+    </div>
+  </div>
   <div class="container slide">
     <header class="text-light">
-      <div id="heading">
-        <h1 class="mt-5 text-center pt-5">Jedi Duel</h1>
+      <div >
+        <h1 class="text-center pt-5" id="heading2">Jedi Duel</h1>
       </div>
     </header>
     <audio autoplay hidden id="starwarsaudio">
@@ -26,11 +40,11 @@
     </audio>
     <main>
 
-      <div class="text-center mt-5 ">
+      <div class="text-center mt-3 ">
         <h2 id="welcome"></h2>
       </div>
       <!--lightsaber hearts-->
-      <div class="row mt-5">
+      <div class="row mt-3">
         <div class="col-6 text-center ">
           <img class="rounded img-fluid flip" id="userHeart1" src="imgs/GREENLIGHTSABER.png">
           <img class="rounded img-fluid flip" id="userHeart2" src="imgs/GREENLIGHTSABER.png">
@@ -67,21 +81,9 @@
           <img class="buttons" id="lightsaber" onclick="playGame('scissors'); document.getElementById('lightsaberS').play();" src="/imgs/GREENLIGHTSABER.png">
         </div>
       </div>
-      <div id="compModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content bg-black border-none text-center">
-          <p class="text-white text-center">you got shitted on by a computer retire</p>
-          <a href="rockpaperscissors.html"><button class="btn reset">Reset</button></a>
-        </div>
-      </div>
+      
 
-      <div id="userModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content bg-black border-none text-center">
-          <p class="text-white text-center">You beat a computer thats not impressive</p>
-          <a href="rockpaperscissors.html"><button class="btn reset jamesBtn">Reset</button></a> 
-        </div>
-      </div>
+ 
 
 
     </main>

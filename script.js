@@ -110,8 +110,8 @@ function playGame(userChoice) {
  
   if (computerScore === 3)  {
     console.log('A Computer Beat Your Ass!!!!')
-    compModal.style.display = "block";
     document.getElementById("userHeart3").classList.add('hide')
+    compModal.style.display = "block";
     }
     
     if (userScore === 3)  {
