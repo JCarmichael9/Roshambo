@@ -1,15 +1,18 @@
 function getValue() {
   // Get the value from the input field
-  let userName = document.getElementById('firstName');
+  let userName = document.getElementById('firstName').value;
+
+  // Save the user's name in localStorage
+  localStorage.setItem('userName', userName);
 
   // Use the value for something else
-  let Greet = document.getElementById('welcome')
-  userName
-  ? (Greet.innerText=`Hello ${userName}`)
-  : (Greet.innerText='Hello')
-  console.log('hi')
+  let Greet = document.getElementById('welcome');
+  if (userName) {
+    Greet.innerText = `Hello ${userName}`;
+  } else {
+    Greet.innerText = 'Hello';
+  }
 }
-
 
 userPicChoice = ""
 compChoice =""
@@ -139,10 +142,12 @@ function playGame(userChoice) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const savedUserName = localStorage.getItem("userName");
+  const welcomeElement = document.getElementById("welcome");
+
   if (savedUserName) {
-    document.getElementById("welcome").innerText = `Hello ${savedUserName}`;
+    welcomeElement.innerText = `Welcome, Jedi ${savedUserName}, to the Galactic Showdown! May the Force be with you as you challenge the stars in this epic Jedi duel. Choose wisely!`;
   } else {
-    document.getElementById("welcome").innerText = 'Hello';
+    welcomeElement.innerText = 'Welcome to the Galactic Showdown! May the Force be with you as you face off against the stars in this epic Jedi duel. Choose wisely!';
   }
 });
 
