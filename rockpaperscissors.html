@@ -22,7 +22,7 @@
       </div>
     </header>
     <audio autoplay hidden>
-      <source src="stwars.mp3" type="audio/mpeg">
+      <source src="stwars-[AudioTrimmer.com].mp3" type="audio/mpeg">
     </audio>
     <main>
 
@@ -55,13 +55,16 @@
       <!--buttons-->
       <div class="row mt-5">
         <div class="col-4  btn">
-          <img class="buttons" id="force" onclick="playGame('paper')" src="/imgs/force-removebg-preview.png">
+          <audio id="forceS" src="force-field-14688-[AudioTrimmer.com].mp3" preload="auto"></audio>
+          <img class="buttons" id="force" onclick="playGame('paper'); document.getElementById('forceS').play();" src="/imgs/force-removebg-preview.png">
         </div>
         <div class="col-4  btn">
-          <img class="buttons" id="blaster" onclick="playGame('rock')" src="/imgs/noteditedone.png">
+          <audio id="blasterS" src="blaster.mp3" preload="auto"></audio>
+          <img class="buttons" id="blaster" onclick="playGame('rock'); document.getElementById('blasterS').play();" src="/imgs/noteditedone.png">
         </div>
         <div class="col-4  btn">
-          <img class="buttons" id="lightsaber" onclick="playGame('scissors')" src="/imgs/GREENLIGHTSABER.png">
+          <audio id="lightsaberS" src="lightsaber-ignition-6816.mp3" preload="auto"></audio>
+          <img class="buttons" id="lightsaber" onclick="playGame('scissors'); document.getElementById('lightsaberS').play();" src="/imgs/GREENLIGHTSABER.png">
         </div>
       </div>
       <div id="compModal" class="modal">

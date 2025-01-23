@@ -135,7 +135,7 @@ input[type="text"]:active {
 .slide {
   margin-top: 50px;
   transform: translateY(2vh) scale(1);
-  transition: all 1s linear;
+  transition: all 30s linear;
 
     @starting-style {
     transform: translateY(-50vh) scale(0.1);

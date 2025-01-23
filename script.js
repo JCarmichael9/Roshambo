@@ -10,6 +10,7 @@ function getValue() {
   console.log('hi')
 }
 
+
 userPicChoice = ""
 compChoice =""
 
