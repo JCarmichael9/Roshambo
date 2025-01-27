@@ -1,8 +1,10 @@
+/* Font definition for the custom 'starwars' font */
 @font-face {
-  font-family: starwars;
-  src: url("fonts/starjedi/Starjedi.ttf");
+  font-family: starwars; /* Name of the font */
+  src: url("fonts/starjedi/Starjedi.ttf"); /* Path to the font file */
 }
 
+/* Apply the 'starwars' font to all h1 and h2 headers */
 h1 {
   font-family: 'starwars';
 }
@@ -11,192 +13,180 @@ h2 {
   font-family: 'starwars';
 }
 
+/* Placeholder style (used for placeholders inside inputs) */
 #placeholder {
   height: 200px;
   width: 200px;
 }
 
+/* Styling for elements with the class 'choice' (for displaying choice text) */
 .choice {
-  color: #FFE81F;
+  color: #FFE81F; /* Yellow color for text */
 }
 
+/* Styling for the 'jamesBtn' class button when it's active (clicked) */
 .jamesBtn:not(:disabled):not(:disabled):active {
-  color: #5e5506;
-} 
+  color: #5e5506; /* Dark yellow-brown color when button is active */
+}
 
+/* Footer styling */
 .footer {
-  color: #FFE81F;
+  color: #FFE81F; /* Yellow text color for the footer */
 }
 
-
+/* Styling for the welcome text element */
 #welcome {
-color: #FFE81F;
+  color: #FFE81F; /* Yellow text color */
 }
+
+/* .hide class to hide elements (opacity 0 makes it invisible) */
 .hide {
   opacity: 0;
 }
 
-#userHeart1 {
+/* Styling for user heart icons */
+#userHeart1, #userHeart2, #userHeart3,
+#computerHeart1, #computerHeart2, #computerHeart3 {
   height: 50px;
-  width: 50px;
+  width: 50px; /* Set the size of the heart icons */
 }
 
-#userHeart2 {
-  height: 50px;
-  width: 50px;
-}
-
-#userHeart3 {
-  height: 50px;
-  width: 50px;
-}
-
-#computerHeart1 {
-  height: 50px;
-  width: 50px;
-}
-
-#computerHeart2 {
-  height: 50px;
-  width: 50px;
-}
-
-#computerHeart3 {
-  height: 50px;
-  width: 50px;
-}
-
+/* Body background image and general page styling */
 body {
-  background: url(imgs/spacebg.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
+  background: url(imgs/spacebg.jpg) no-repeat center center fixed; /* Space-themed background */
+  background-size: cover; /* Ensure the background image covers the entire page */
+  height: 100%; /* Full page height */
 }
 
+/* Flip effect for elements */
 .flip {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* Flips the element on the Y-axis */
 }
 
+/* Button size styling for elements with the 'buttons' class */
 .buttons {
   height: 200px;
-  width: 200px;
+  width: 200px; /* Set button size */
 }
 
+/* Input field placeholder text color */
 input::placeholder {
-  color: white;
+  color: white; /* White placeholder text */
 }
 
+/* Styling for text input fields (e.g., user name input) */
 input[type="text"] {
-  font-size: 24px;
-  font-family: "starwars", serif;
-  font-weight: 700;
+  font-size: 24px; /* Set font size */
+  font-family: "starwars", serif; /* Custom 'starwars' font */
+  font-weight: 700; /* Bold text */
   font-style: normal;
 }
 
+/* Active state for text inputs */
 input[type="text"]:active {
-  font-size: 24px;
+  font-size: 24px; /* Ensure the font stays the same when active */
   font-family: "starwars", serif;
   font-weight: 700;
 }
 
-input[type="text"]:active {
-  font-size: 24px;
-  font-family: "starwars", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
+/* Label styling for form elements */
 .form-label {
-  font-family: "starwars";
-  color: #FFE81F;
+  font-family: "starwars"; /* Use custom font */
+  color: #FFE81F; /* Yellow label color */
 }
 
+/* Heading 2 styling (larger font for some headings) */
 #heading2 {
-  font-size: 100px;
+  font-size: 100px; /* Large font size */
   font-family: 'starwars';
-  color: #FFE81F;
+  color: #FFE81F; /* Yellow color */
 }
 
+/* Container class 'big' for large elements like the main content */
 .big {
-  height: 85vh;
-  width: 100vw;
+  height: 85vh; /* 85% of the viewport height */
+  width: 100vw; /* Full viewport width */
 }
 
+/* Modal text styling */
 .textModal {
-  font-family: "starwars";
-  color: #FFE81F;
+  font-family: "starwars"; /* Custom font */
+  color: #FFE81F; /* Yellow text color */
 }
 
+/* Large heading styling for the main title */
 #heading {
-  font-size: 200px;
+  font-size: 200px; /* Very large font for the main heading */
   font-family: 'starwars';
-  color: #FFE81F;
+  color: #FFE81F; /* Yellow color */
 }
 
+/* Button hover effect (changes text color on hover) */
 .btn:hover {
-  color: #5e5506;
+  color: #5e5506; /* Dark yellow-brown color */
 }
 
+/* General button styling */
 .btn {
-  font-family: "starwars";
-  color: #FFE81F;
-  font-size: 40px
+  font-family: "starwars"; /* Custom font */
+  color: #FFE81F; /* Yellow text color */
+  font-size: 40px; /* Set font size */
 }
 
+/* Slide animation effect for some elements */
 .slide {
   margin-top: 50px;
-  transform: translateY(2vh) scale(1);
-  transition: all 30s linear;
+  transform: translateY(2vh) scale(1); /* Initial state of the element */
+  transition: all 30s linear; /* Smooth transition effect */
 
-    @starting-style {
-    transform: translateY(-50vh) scale(0.1);
+  @starting-style {
+    transform: translateY(-50vh) scale(0.1); /* Initial position for slide animation */
   }
-
 }
 
-#winLoss{
+/* Styling for the win/loss section */
+#winLoss {
   height: 150px;
   width: 300px;
 }
 
-#compPick {
+/* Styling for the images representing the computer's and user's choices */
+#compPick, #userPick {
   height: 150px;
-  width: 150px;
+  width: 150px; /* Set image size */
 }
 
-#userPick {
-  height: 150px;
-  width: 150px;
-}
-
+/* Remove border from buttons */
 .btn {
   border: none;
 }
 
+/* Modal background and content styling */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed; /* Stay in place on the screen */
+  z-index: 1; /* Display on top */
   left: 0;
   top: 0;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  background-size: cover;
-  height: 100%;
+  overflow: auto; /* Enable scrolling if needed */
+  background-color: rgb(0, 0, 0); /* Black background */
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+  background-size: cover; /* Cover the entire modal area */
+  height: 100%; /* Full screen height */
 }
 
-/* Modal Content/Box */
+/* Modal content box styling */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  background-color: #fefefe; /* White background for modal content */
+  margin: 15% auto; /* Center modal box on screen */
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  border: 1px solid #888; /* Light border around modal */
+  width: 80%; /* Set modal width */
 }
 
+/* Reset button styling */
 .reset {
-  color: #FFE81F;
-  font-family: "starwars";
-  font-size: 40px
+  color: #FFE81F; /* Yellow text */
+  font-family: "starwars"; /* Custom font */
+  font-size: 40px; /* Set font size */
 }

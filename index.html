@@ -3,53 +3,70 @@
 
 <head>
   <title>Jedi Duel</title>
-  <!-- Required meta tags -->
+  <!-- Required meta tags for responsive design -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!-- Bootstrap CSS v5.2.1 -->
+  <!-- Bootstrap CSS for styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Custom stylesheet for additional styling -->
 </head>
-<div class="container">
 
-  <body>
+<body>
+  <div class="container">
     <header class="text-light">
+      <!-- Header section - You can add a logo or other content here if needed -->
     </header>
+
     <main>
+      <!-- Main container for centering the content -->
       <div class="container d-flex justify-content-center align-items-center big">
+        <!-- Inner container for content -->
         <div class="container d-block">
           <div id="heading">
-            <p class="mb-5 text-center pt-5">Jedi Duel</p>
+            <p class="mb-5 text-center pt-5">Jedi Duel</p> <!-- Game title -->
           </div>
+
+          <!-- Form section for entering the user's first name -->
           <div class="row">
             <div class="col-12">
-              <label for="firstName" class="form-label fs-2">Please Enter Your First Name Jedi</label>
+              <label for="firstName" class="form-label fs-2">Please Enter Your First Name Jedi</label> 
+              <!-- Label for the input field -->
             </div>
           </div>
+
           <div class="row">
             <div class="col-12">
+                <!-- Input field for the user's first name -->
                 <input type="text" class="form-control display-1" id="firstName" placeholder="Enter your first name">
               <div class="text-center mt-5">
-                <a href="rockpaperscissors.html"><button   class="btn jamesBtn" onclick="getValue()">Submit</button></a>
+                <!-- Button to submit the form and navigate to another page -->
+                <a href="rockpaperscissors.html">
+                  <button class="btn jamesBtn" onclick="getValue()">Submit</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer class="fixed-bottom bg-black text-center footer">
-      <h1>©2025 JamesFilms Ltd.</h1>
-    </footer>
-</div>
-<!-- Bootstrap JavaScript Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-  integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-<script src="script.js"></script>
+    <!-- Footer with copyright info -->
+    <footer class="fixed-bottom bg-black text-center footer">
+      <h1>©2025 JamesFilms Ltd.</h1> <!-- Copyright information -->
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js for required functionality -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+  <!-- Custom script for handling the input and game logic -->
+  <script src="script.js"></script>
 </body>
 
 </html>

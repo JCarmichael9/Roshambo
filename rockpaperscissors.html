@@ -3,51 +3,55 @@
 
 <head>
   <title>Jedi Duel</title>
-  <!-- Required meta tags -->
+  <!-- Required meta tags for responsive design -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!-- Bootstrap CSS v5.2.1 -->
+  <!-- Bootstrap CSS for styling -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Custom stylesheet for additional styling -->
 </head>
 
-
 <body>
+  <!-- Modal for computer winning -->
   <div id="computerModal" class="modal">
-    <!-- Modal content -->
     <div class="modal-content bg-black border-none text-center textModal">
       <p class="text-white text-center">The Dark Side claimed victory this time. But do not worry, the Force will guide you next time!</p>
       <div><img src="imgs/200.gif" id="winLoss"></div>
-      <a href="rockpaperscissors.html"><button class="btn reset">Reset</button></a>
+      <a href="rockpaperscissors.html"><button class="btn reset">Reset</button></a> <!-- Reset button link -->
     </div>
   </div>
+
+  <!-- Modal for user winning -->
   <div id="userModal" class="modal">
-    <!-- Modal content -->
     <div class="modal-content bg-black border-none text-center">
       <p class="text-white text-center textModal">The Force is strong with you! You have defeated your opponent like a true Jedi!</p>
       <div><img src="imgs/300.gif" id="winLoss"></div>
-      <a href="rockpaperscissors.html"><button class="btn reset jamesBtn">Reset</button></a> 
+      <a href="rockpaperscissors.html"><button class="btn reset jamesBtn">Reset</button></a> <!-- Reset button link -->
     </div>
   </div>
+
   <div class="container slide">
     <header class="text-light">
-      <div >
-        <h1 class="text-center pt-5" id="heading2">Jedi Duel</h1>
+      <div>
+        <h1 class="text-center pt-5" id="heading2">Jedi Duel</h1> <!-- Title of the game -->
       </div>
     </header>
+    
+    <!-- Background audio (Star Wars theme) -->
     <audio autoplay hidden id="starwarsaudio">
       <source src="stwars-[AudioTrimmer.com].mp3" type="audio/mpeg">
     </audio>
+    
     <main>
-
-      <div class="text-center mt-3 ">
-        <h2 id="welcome"></h2>
+      <div class="text-center mt-3">
+        <h2 id="welcome"></h2> <!-- Placeholder for welcome message -->
       </div>
-      <!--lightsaber hearts-->
+
+      <!-- Lightsaber hearts for user and computer health -->
       <div class="row mt-3">
-        <div class="col-6 text-center ">
+        <div class="col-6 text-center">
           <img class="rounded img-fluid flip" id="userHeart1" src="imgs/GREENLIGHTSABER.png">
           <img class="rounded img-fluid flip" id="userHeart2" src="imgs/GREENLIGHTSABER.png">
           <img class="rounded img-fluid flip" id="userHeart3" src="imgs/GREENLIGHTSABER.png">
@@ -58,50 +62,57 @@
           <img class="rounded img-fluid" id="computerHeart3" src="imgs/GREENLIGHTSABER.png">
         </div>
       </div>
-      <!--choice with pic hearts-->
-      <div class="row ">
+
+      <!-- User's and computer's choices -->
+      <div class="row">
         <div class="col-6 text-center choice">
-          <h2 class="mb-3">user Choice</h2><br><img class="rounded img-fluid flip" id="userPick" src="imgs/millenium.gif">
+          <h2 class="mb-3">User Choice</h2><br>
+          <img class="rounded img-fluid flip" id="userPick" src="imgs/millenium.gif">
         </div>
         <div class="col-6 text-center choice">
           <h2 class="mb-3">Computer Choice</h2><br>
           <img class="rounded img-fluid" id="compPick" src="imgs/tiefighter.gif">
         </div>
       </div>
-      <!--buttons-->
+
+      <!-- Action buttons for the user to select their move -->
       <div class="row mt-5">
-        <div class="col-4  btn">
+        <!-- Force button for paper choice -->
+        <div class="col-4 btn">
           <audio id="forceS" src="force-field-14688-(1) (mp3cut.net).mp3" preload="auto"></audio>
-          <img class="buttons" id="force" onclick="playGame('paper'); document.getElementById('forceS').play();" src="/imgs/force-removebg-preview.png">
+          <img class="buttons" id="force" onclick="playGame('paper'); document.getElementById('forceS').play();" src="imgs/force-removebg-preview.png">
         </div>
-        <div class="col-4  btn">
+        
+        <!-- Blaster button for rock choice -->
+        <div class="col-4 btn">
           <audio id="blasterS" src="blaster.mp3" preload="auto"></audio>
-          <img class="buttons" id="blaster" onclick="playGame('rock'); document.getElementById('blasterS').play();" src="/imgs/noteditedone.png">
+          <img class="buttons" id="blaster" onclick="playGame('rock'); document.getElementById('blasterS').play();" src="imgs/noteditedone.png">
         </div>
-        <div class="col-4  btn">
+
+        <!-- Lightsaber button for scissors choice -->
+        <div class="col-4 btn">
           <audio id="lightsaberS" src="lightsaber-ignition-6816 (mp3cut.net).mp3" preload="auto"></audio>
-          <img class="buttons" id="lightsaber" onclick="playGame('scissors'); document.getElementById('lightsaberS').play();" src="/imgs/GREENLIGHTSABER.png">
+          <img class="buttons" id="lightsaber" onclick="playGame('scissors'); document.getElementById('lightsaberS').play();" src="imgs/GREENLIGHTSABER.png">
         </div>
       </div>
-      
-
- 
-
-
     </main>
   </div>
+
+  <!-- Footer for the page with copyright info -->
   <footer class="fixed-bottom bg-black text-center footer">
-    <h1>©2025 JamesFilms Ltd.</h1>
+    <h1>©2025 JamesFilms Ltd.</h1> <!-- Copyright info -->
   </footer>
 
-  <!-- Bootstrap JavaScript Libraries -->
+  <!-- Bootstrap JS for required functionality -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
     crossorigin="anonymous"></script>
+
+  <!-- Custom script for the game logic -->
   <script src="script.js"></script>
 </body>
 
