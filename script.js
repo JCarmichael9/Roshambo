@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
     welcomeElement.innerText = `Welcome, Jedi ${savedUserName}, to the Galactic Showdown! May the Force be with you as you challenge the stars in this epic Jedi duel. Choose wisely!`;
   } else {
     // If no name is saved, display a default message
-    welcomeElement.innerText = 'Welcome to the Galactic Showdown! May the Force be with you as you face off against the stars in this epic Jedi duel. Choose wisely!';
+    welcomeElement.innerText = 'Welcome, Master Jedi, to the Galactic Showdown! May the Force be with you as you face off against the stars in this epic Jedi duel. Choose wisely!';
   }
 });
 
@@ -177,7 +177,6 @@ let userModal = document.getElementById("userModal");
 let compModal = document.getElementById("computerModal");
 
 // The following blocks seem to be redundant because the game already checks for scores during playGame()
-// These can be removed or integrated better if necessary
 
 // Call the getValue function to display the user's name when the page loads
 getValue();
