@@ -116,7 +116,7 @@ input[type="text"]:active {
 
 /* Large heading styling for the main title */
 #heading {
-  font-size: 200px; /* Very large font for the main heading */
+  font-size: 150px; /* Very large font for the main heading */
   font-family: 'starwars';
   color: #FFE81F; /* Yellow color */
 }
