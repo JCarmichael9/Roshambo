@@ -128,12 +128,16 @@ function playGame(userChoice) {
     console.log('A Computer Beat Your Ass!!!!');
     document.getElementById("userHeart3").classList.add('hide'); // Hide user heart
     compModal.style.display = "block"; // Show computer win modal
+    let audio = new Audio('losevoice.mp3');
+    audio.play();
   }
 
   if (userScore === 3) {
     console.log('You Beat A Computer, not impressive');
     document.getElementById("computerHeart3").classList.add('hide'); // Hide computer heart
     userModal.style.display = "block"; // Show user win modal
+    let audio = new Audio('winvoice.mp3');
+    audio.play();
   }
 
   // Update the images of the user and computer choices
@@ -177,6 +181,7 @@ let userModal = document.getElementById("userModal");
 let compModal = document.getElementById("computerModal");
 
 // The following blocks seem to be redundant because the game already checks for scores during playGame()
+
 
 // Call the getValue function to display the user's name when the page loads
 getValue();
