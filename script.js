@@ -49,7 +49,7 @@ const getComputerChoice = () => {
       compChoice = 'imgs/force-removebg-preview.png'; // Paper image
       return 'paper';
     case 2:
-      compChoice = 'imgs/GREENLIGHTSABER.png'; // Scissors image
+      compChoice = 'imgs/REDLIGHTSABER.png'; // Scissors image
       return 'scissors';
   }
 };
@@ -178,13 +178,6 @@ let compModal = document.getElementById("computerModal");
 
 // The following blocks seem to be redundant because the game already checks for scores during playGame()
 // These can be removed or integrated better if necessary
-if (userScore === 3) {
-  
-}
-
-if (computerScore === 3) {
-
-}
 
 // Call the getValue function to display the user's name when the page loads
 getValue();
