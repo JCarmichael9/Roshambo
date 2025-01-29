@@ -21,6 +21,9 @@
     </header>
 
     <main>
+      <audio autoplay hidden id="guySpeaksIntro">
+        <source src="betterintro.mp3" type="audio/mpeg">
+      </audio>
       <!-- Main container for centering the content -->
       <div class="container d-flex justify-content-center align-items-center big">
         <!-- Inner container for content -->
@@ -42,6 +45,7 @@
                 <!-- Input field for the user's first name -->
                 <input type="text" class="form-control display-1" id="firstName" placeholder="Enter your first name">
               <div class="text-center mt-5">
+                <p id="introText">Remember Jedi: the Force overpowers the blaster, the blaster outguns the lightsaber, and the lightsaber cuts through the Force. Choose your weapon wisely, young one</p>
                 <!-- Button to submit the form and navigate to another page -->
                 <a href="rockpaperscissors.html">
                   <button class="btn jamesBtn" onclick="getValue()">Submit</button>

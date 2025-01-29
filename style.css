@@ -102,6 +102,13 @@ input[type="text"]:active {
   color: #FFE81F; /* Yellow color */
 }
 
+/*text for the introfuction thing that expains rules*/
+#introText {
+  font-family: "starwars"; /* Use custom font */
+  color: #FFE81F; /* Yellow label color */
+  font-size: 24px; /* Ensure the font stays the same when active */
+}
+
 /* Container class 'big' for large elements like the main content */
 .big {
   height: 85vh; /* 85% of the viewport height */
